@@ -1,4 +1,4 @@
-# YOLOv8 Equipment Detection with Flask
+# YOLOv8 Object Recognition App with Flask Integration
 ## Description
 This repository contains code for a computer vision project that utilizes YOLOv8 for equipment detection. The project includes Flask-based APIs for performing object detection on images using YOLOv8 architecture.
 
