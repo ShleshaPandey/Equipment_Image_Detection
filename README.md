@@ -4,11 +4,17 @@ This repository contains code for a computer vision project that utilizes YOLOv8
 
 ## Folder Structure
 dataset: Contains test data and a data.yaml file.
+
 app.py: File containing the Flask code for the web application.
+
 utils/predict.py: Python script containing the object detection code.
+
 utils/train.py: Python script for training image detection using YOLOv8 architecture.
+
 routes/obdet.py: Python script containing the API endpoint for object detection using utils/predict.py.
+
 detect: Folder containing the YOLOv8 model weights.
+
 ## Dataset
 The dataset used in this project was exported via roboflow.com. It includes 137 images annotated in YOLOv8 format. The dataset preprocessing includes auto-orientation, resizing to 640x640, and various augmentations such as rotations, random cropping, brightness adjustments, and exposure adjustments.
 
