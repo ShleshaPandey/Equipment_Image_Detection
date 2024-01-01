@@ -17,7 +17,9 @@ detect: Folder containing the YOLOv8 model weights.
 
 ## Dataset
 The dataset used in this project was exported via roboflow.com. 
+
 It includes 137 images annotated in YOLOv8 format. 
+
 The dataset preprocessing includes auto-orientation, resizing to 640x640, and various augmentations such as rotations, random cropping, brightness adjustments, and exposure adjustments.
 
 ## Dataset Details:
@@ -68,6 +70,7 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ## Acknowledgments
 YOLOv8: https://github.com/ultralytics/yolov8
+
 Roboflow: https://roboflow.com/
 ## Contact
 For questions or inquiries, please contact shlesha.pandey9@gmail.com
