@@ -1,9 +1,9 @@
-# YOLOv8 Object Detection with Flask
+# YOLOv8 Equipment Detection with Flask
 ## Description
-This repository contains code for a computer vision project that utilizes YOLOv8 for object detection. The project includes Flask-based APIs for performing object detection on images using pre-trained YOLOv8 models.
+This repository contains code for a computer vision project that utilizes YOLOv8 for equipment detection. The project includes Flask-based APIs for performing object detection on images using YOLOv8 architecture.
 
 ## Folder Structure
-dataset: Contains test data and a data.yaml file.
+dataset: Contains train, test data and a data.yaml file.
 
 app.py: File containing the Flask code for the web application.
 
@@ -16,10 +16,14 @@ routes/obdet.py: Python script containing the API endpoint for object detection 
 detect: Folder containing the YOLOv8 model weights.
 
 ## Dataset
-The dataset used in this project was exported via roboflow.com. It includes 137 images annotated in YOLOv8 format. The dataset preprocessing includes auto-orientation, resizing to 640x640, and various augmentations such as rotations, random cropping, brightness adjustments, and exposure adjustments.
+The dataset used in this project was exported via roboflow.com. 
+It includes 137 images annotated in YOLOv8 format. 
+The dataset preprocessing includes auto-orientation, resizing to 640x640, and various augmentations such as rotations, random cropping, brightness adjustments, and exposure adjustments.
 
 ## Dataset Details:
+
 Images: 137
+
 Annotated Classes: AC, Fan, Generator, Meter, Pump
 
 ## Usage details:
