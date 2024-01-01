@@ -52,6 +52,8 @@ The API response includes details about the detected objects and the path to the
 
 ## Example Output:
 Annotated Image
+![image](https://github.com/ShleshaPandey/Equipment_Image_Detection/assets/77585446/aea030f9-c2d0-45ad-9c53-951000a1d193)
+
 
 In the example above, the green bounding boxes represent detected objects, and the corresponding labels indicate the object classes. The level of confidence for each detection is also displayed.
 
