@@ -1,0 +1,16 @@
+names:
+- AirConditionar
+- Fan
+- Generator
+- Meter
+- Pump
+nc: 5
+roboflow:
+  license: CC BY 4.0
+  project: equipmentdetection_2
+  url: https://universe.roboflow.com/shlesha/equipmentdetection_2/dataset/1
+  version: 1
+  workspace: shlesha
+test: test/images
+train: train/images
+val: valid/images
