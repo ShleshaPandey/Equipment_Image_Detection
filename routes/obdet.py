@@ -2,12 +2,9 @@ from flask import *
 from flask import request, jsonify
 import cv2
 import requests
-from flask import Flask, flash, request, redirect, url_for
-from werkzeug.utils import secure_filename
+from flask import Flask, flash, request, redirect, url_for 
 from ultralytics import YOLO
-import numpy as np
-from PIL import Image
-from io import BytesIO
+import numpy as np 
 import sys
 import os
 import base64
@@ -20,18 +17,7 @@ Upload_Folder = './uploads'
 
 from . import routes
 @routes.route("/object_detection", methods=['POST'])
-
-#tag_name = request.get_json(force=True)
-#query =tag_name['Quest'] 
-
-#def allowed_file(filename):
-#    ALLOWED_EXTENSIONS = {'png', 'jpg', 'jpeg'} 
-#    return '.' in filename and filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS
  
-# Load the YOLO model and other necessary configurations
-
-# Replace with the act
-
 def predict():
     try:
         # Receive the image file from the request
@@ -40,24 +26,15 @@ def predict():
         print("2")
         # Save the image to a temporary file
         image_path = 'uploads/temp_image.jpg'
-        image_file.save(image_path)
-        print("22")
+        image_file.save(image_path) 
         # Perform object detection
-        output, annotated_image_path = predict_objects(image_path)
-        print("222")
-        # Convert PIL image to bytes for response
-        #image_bytes = BytesIO()
-        ##pil_image.save(image_bytes, format='JPEG')
-        #image_bytes = image_bytes.getvalue()
-    
+        output, annotated_image_path = predict_objects(image_path)   
         # Prepare the API response
-        response_data = {'predictions': output, 'Annotated-Imagepath': annotated_image_path}
-        print("2222")
+        response_data = {'predictions': output, 'Annotated-Imagepath': annotated_image_path} 
         # Encode the image to Base64
         
         return jsonify(response_data) 
         #return(image_path)
-    except Exception as e:
-        print("3")
+    except Exception as e: 
         return jsonify({'error': str(e)}), 500
  
